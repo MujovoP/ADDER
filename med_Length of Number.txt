@@ -1,0 +1,8 @@
+
+def number_length(num):
+    num_str = str(num)
+    return len(num_str)
+
+print(number_length(12345))  
+print(number_length(9876543210))  
+print(number_length(0))  

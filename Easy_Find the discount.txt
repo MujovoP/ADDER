@@ -1,0 +1,11 @@
+def dis(original_price, discount_percentage):
+    if discount_percentage < 0 or discount_percentage > 100:
+        raise ValueError("Discount percentage must be between 0 and 100.")
+    
+    discount_amount = original_price * discount_percentage / 100
+    final_price = original_price - discount_amount
+    return final_price
+
+print(dis(1500, 50))  
+print(dis(89, 20))  
+print(dis(100, 75))  
